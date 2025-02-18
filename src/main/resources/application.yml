@@ -1,0 +1,15 @@
+spring:
+  security:
+    user:
+      name: sa
+      password: sa
+
+  datasource:
+    url: jdbc:h2:mem:usermanagementdb
+    username: sa
+    password: sa
+
+  h2:
+    console:
+      enabled: true
+
