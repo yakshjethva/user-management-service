@@ -1,4 +1,4 @@
-package model;
+package com.yakshjethva.usermanagement.model;
 
 import jakarta.persistence.*;
 import lombok.Data;
