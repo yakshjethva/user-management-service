@@ -66,6 +66,10 @@ public class UserService {
 		return userRepository.findByUsername(username)
 				.orElseThrow(() -> new UserNotFoundException("User not found with username: " + username));
 	}
+	public User getUserByEmail(String email) {
+		return userRepository.findByEmail(email)
+				.orElseThrow(() -> new UserNotFoundException("User not found with email: " + email));
+	}
 
 	public void softDeleteUser(Long userId) {
 		User user = userRepository.findById(userId)
